@@ -1,0 +1,21 @@
+{% if lst %}
+    <h3>Here is Data</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th> URL</th>
+            <th>Location</th>
+            <th>Rating</th>
+        </tr>
+        {% for item in lst %}
+            <tr>
+                <td>{{ item.name}}</td>
+                <td>{{ item.url}}</td>
+                <td>{{ item.location}}</td>
+                <td>{{ item.rating}}</td>
+            </tr>
+        {% endfor %}
+
+
+    </table>
+{% endif %}
